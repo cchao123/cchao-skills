@@ -92,7 +92,7 @@ node "C:\Users\youku\.openclaw\workspace\skills\youku2html\scripts\server.js"
 
 2. **Check if server is running**:
 ```bash
-netstat -ano | findstr :8080 | findstr LISTENING
+netstat -ano | findstr :6666 | findstr LISTENING
 ```
 
 3. **Get local IP**:
@@ -103,32 +103,23 @@ Look for IPv4 address (e.g., `10.20.137.201`)
 
 4. **Construct preview URL**:
 ```
-http://YOUR_IP:8080/YYYYMMDD/filename.html
+http://YOUR_IP:6666/YYYYMMDD/filename.html
 ```
 
-Example: `http://10.20.137.201:8080/20260302/youku-service-agreement.html`
+Example: `http://10.20.137.201:6666/20260302/youku-service-agreement.html`
 
 ### Step 6: Report to User
 
 Provide:
 1. ✅ HTML file path
 2. 🌐 Preview URL (for LAN access)
-3. 📝 Summary of what was converted
 
 Example response:
 ```
 🐟 搞定！HTML已生成。
 
 **文件路径：** output/20260302/youku-service-agreement.html
-**预览地址：** http://10.20.137.201:8080/20260302/youku-service-agreement.html
-
-**样式特点：**
-- ✅ 游酷盛世官网风格
-- ✅ 简洁白色背景
-- ✅ 重要条款加粗+下划线
-- ✅ 移动端友好
-
-直接访问即可～
+**预览地址：** http://10.20.137.201:6666/20260302/youku-service-agreement.html
 ```
 
 ## HTML Template Style
@@ -153,7 +144,7 @@ Based on https://game.66y.com/contract.html:
 2. Read document content
 3. Generate HTML with template
 4. Save to `output/20260302/agreement.html`
-5. Start/verify server on port 8080
+5. Start/verify server on port 6666
 6. Return preview URL
 
 ### Example 2: Text Content
@@ -168,7 +159,7 @@ Based on https://game.66y.com/contract.html:
 
 ## Notes
 
-- Always use port **8080** for consistency
+- Always use port **6666** for consistency
 - Server can run in background (check with netstat)
 - Important clauses should use `.important` class
 - Keep the style consistent with 66y official website
