@@ -31,6 +31,10 @@ This template is based on the official 66y game website style (https://game.66y.
         .text-decoration {
             text-decoration: underline;
         }
+
+        p {
+            word-break: break-all;
+        }
     </style>
 </head>
 <body>
