@@ -1,0 +1,20 @@
+---
+name: demo-skill
+description: A demonstration skill showcasing the capabilities of the Skills Manager application
+---
+
+# Demo Skill
+
+This is a demonstration skill that showcases various features.
+
+## Features
+
+- Clean YAML frontmatter
+- Multi-language support
+- Comprehensive description
+
+## Technical Details
+
+- Name: demo-skill
+- Type: Testing/Demonstration
+- Version: 1.0.0
