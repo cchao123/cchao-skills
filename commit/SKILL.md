@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 帮我提交当前的更改。要求：
 1. 查看当前 git status 和 git diff
-2. 生成一个 commit message 要求遵守约定式提交规范fix、feat、build:、chore:、 ci:、docs、style、refactor、、test（中文）
+2. 生成一个 commit message 要求遵守约定式提交规范 使用fix、feat、build、chore、 ci:、docs、style、refactor、test等 + 描述（中文）
 3. **重要**：commit message 中不要包含任何 Claude Code、Claude、Co-Authored-By 或者 Cursor的Made-with: Cursor等相关信息
 4. 不要在 commit message 中提及是 AI 辅助编写的
 5. 执行 git commit
