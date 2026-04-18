@@ -1,6 +1,6 @@
 ---
 name: commit
-description: 帮我提交代码，不包含 Claude Code 相关信息
+description: 帮我提交代码，分析改动补充commit信息
 disable-model-invocation: true
 ---
 
