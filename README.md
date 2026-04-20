@@ -2,7 +2,25 @@
 
 > Synced by [Skills Manager](https://github.com/cchao123/skills-managers) — a desktop app for managing AI coding agent skills.
 
-## Skills (6)
+## Use as a Claude Code marketplace
+
+This repository is auto-generated as a [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugin-marketplaces). Each skill below is exposed as an individually installable plugin.
+
+In Claude Code, add this marketplace:
+
+```bash
+/plugin marketplace add cchao123/cchao-skills
+```
+
+Then install any skill you want:
+
+```bash
+/plugin install babysit@cchao-skills
+```
+
+Browse all available skills with `/plugin` after adding the marketplace, or see the full list in [`.claude-plugin/marketplace.json`](./.claude-plugin/marketplace.json).
+
+## Skills (10)
 
 | # | Skill | Description |
 |---|-------|-------------|
@@ -12,4 +30,8 @@
 | 4 | **create-hook** | Create Cursor hooks. Use when you want to create a hook, write hooks.json, add hook scripts, or automate behavior around agent events. |
 | 5 | **create-rule** | Create Cursor rules for persistent AI guidance. Use when you want to create a rule, add coding standards, set up project conventions, configure file-specific patterns, create RULE.md files, or asks about .cursor/rules/ or AGENTS.md. |
 | 6 | **figma** | Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code. Trigger when a task involves Figma URLs, node IDs, design-to-code implementation, or Figma MCP setup and troubleshooting. |
+| 7 | **remotion-best-practices** | Best practices for Remotion - Video creation in React |
+| 8 | **sentry** | Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry API; perform read-only queries with the bundled script and require `SENTRY_AUTH_TOKEN`. |
+| 9 | **shell** | Runs the rest of a /shell request as a literal shell command. Use only when the user explicitly invokes /shell and wants the following text executed directly in the terminal. |
+| 10 | **weather** | Get current weather and forecasts (no API key required). |
 
