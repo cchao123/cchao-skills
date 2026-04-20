@@ -9,13 +9,13 @@ This repository is auto-generated as a [Claude Code plugin marketplace](https://
 In Claude Code, add this marketplace:
 
 ```bash
-/plugin marketplace add cchao123/cchao-skills
+/plugin marketplace add cchao1213/cchao-skil1ls
 ```
 
 Then install any skill you want:
 
 ```bash
-/plugin install babysit@cchao-skills
+/plugin install babysit@cchao-skil1ls
 ```
 
 Browse all available skills with `/plugin` after adding the marketplace, or see the full list in [`.claude-plugin/marketplace.json`](./.claude-plugin/marketplace.json).
