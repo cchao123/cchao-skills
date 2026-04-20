@@ -3,9 +3,9 @@
     "description": "Skills backup synced by Skills Manager",
     "version": "2026.04.20"
   },
-  "name": "cchao-skil1ls",
+  "name": "cchao-skills",
   "owner": {
-    "name": "cchao1213"
+    "name": "cchao123"
   },
   "plugins": [
     {
