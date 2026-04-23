@@ -16,24 +16,6 @@
       ],
       "source": "./commit",
       "strict": false
-    },
-    {
-      "description": "Split current work into small reviewable PRs. Use when the user asks to split a chat, set of changes, branch, or PR.",
-      "name": "split-to-prs",
-      "skills": [
-        "./"
-      ],
-      "source": "./split-to-prs",
-      "strict": false
-    },
-    {
-      "description": "Use when executing implementation plans with independent tasks in the current session",
-      "name": "subagent-driven-development",
-      "skills": [
-        "./"
-      ],
-      "source": "./subagent-driven-development",
-      "strict": false
     }
   ]
 }
