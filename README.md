@@ -20,9 +20,11 @@ Then install any skill you want:
 
 Browse all available skills with `/plugin` after adding the marketplace, or see the full list in [`.claude-plugin/marketplace.json`](./.claude-plugin/marketplace.json).
 
-## Skills (1)
+## Skills (3)
 
 | # | Skill | Description |
 |---|-------|-------------|
 | 1 | **commit** | 帮我提交代码，分析改动补充commit信息 |
+| 2 | **split-to-prs** | Split current work into small reviewable PRs. Use when the user asks to split a chat, set of changes, branch, or PR. |
+| 3 | **subagent-driven-development** | Use when executing implementation plans with independent tasks in the current session |
 
