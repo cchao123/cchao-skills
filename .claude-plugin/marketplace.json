@@ -1,7 +1,7 @@
 {
   "metadata": {
     "description": "Skills backup synced by Skills Manager",
-    "version": "2026.05.06"
+    "version": "2026.05.07"
   },
   "name": "cchao-skills",
   "owner": {
@@ -18,12 +18,30 @@
       "strict": false
     },
     {
+      "description": "A Cursor Canvas is a live React app that the user can open beside the chat. You MUST use a canvas when the agent produces a standalone analytical artifact — quantitative analyses, billing investigations, security audits, architecture reviews, data-heavy content, timelines, charts, tables, interactive explorations, repeatable tools, or any response that benefits from visual layout. Especially prefer a canvas when presenting results from MCP tools (Datadog, Databricks, Linear, Sentry, Slack, etc.) where the data is the deliverable — render it in a rich canvas rather than dumping it into a markdown table or code block. If you catch yourself about to write a markdown table, stop and use a canvas instead. You MUST also read this skill whenever you create, edit, or debug any .canvas.tsx file.",
+      "name": "canvas",
+      "skills": [
+        "./"
+      ],
+      "source": "./canvas",
+      "strict": false
+    },
+    {
       "description": "帮我提交代码，分析改动补充commit信息",
       "name": "commit",
       "skills": [
         "./"
       ],
       "source": "./commit",
+      "strict": false
+    },
+    {
+      "description": "Create Cursor Agent Skills. Use when authoring a new skill or asking about SKILL.md structure.",
+      "name": "create-skill",
+      "skills": [
+        "./"
+      ],
+      "source": "./create-skill",
       "strict": false
     },
     {
@@ -54,6 +72,24 @@
       "strict": false
     },
     {
+      "description": "专业公众号内容创作专家，支持多平台文章写作（公众号/小红书/知乎等），提供从构思到成文的全流程服务。\n基于传播学原理和新媒体运营实践，专注于创作具有传播力、高质量、自然流畅的内容。\n核心功能包括：标题优化与吸引力提升、文章结构设计与逻辑梳理、语言润色与AI痕迹去除、\n配图建议与视觉元素规划、传播性内容策划与话题挖掘。特色能力涵盖：\n基于传播学原理的内容优化、真人化写作技巧（去除AI感）、多平台适配与风格转换、\n数据驱动的热点捕捉、读者共情与情感连接。集成去AI痕迹技术，\n确保内容自然流畅、富有感染力，帮助用户创作高质量的传播内容。\n",
+      "name": "gongzhonghao-xieshou-1-0-0",
+      "skills": [
+        "./"
+      ],
+      "source": "./gongzhonghao-xieshou-1.0.0",
+      "strict": false
+    },
+    {
+      "description": "将本地 Markdown 文章渲染为微信公众号格式并一键推送到草稿箱的完整工作流。 当用户说\"把这篇文章推到公众号\"、\"发布到微信公众号\"、\"推送草稿\"、 \"帮我发公众号\"、\"同步到公众号草稿箱\"、\"推到微信\"等类似需求时， 必须主动使用此 skill，不要跳过。 使用 publish.cjs 一步完成渲染 + 推送，无需生成本地 HTML 文件。 需要 Node.js 18+，零外部依赖。",
+      "name": "md-to-wechat",
+      "skills": [
+        "./"
+      ],
+      "source": "./md-to-wechat",
+      "strict": false
+    },
+    {
       "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
       "name": "shadcn",
       "skills": [
@@ -63,12 +99,57 @@
       "strict": false
     },
     {
+      "description": "Split current work into small reviewable PRs. Use when the user asks to split a chat, set of changes, branch, or PR.",
+      "name": "split-to-prs",
+      "skills": [
+        "./"
+      ],
+      "source": "./split-to-prs",
+      "strict": false
+    },
+    {
+      "description": "Configure a custom status line in the CLI. Use when the user mentions status line, statusline, statusLine, CLI status bar, prompt footer customization, or wants to add session context above the prompt.",
+      "name": "statusline",
+      "skills": [
+        "./"
+      ],
+      "source": "./statusline",
+      "strict": false
+    },
+    {
+      "description": "Modify Cursor/VSCode user settings in settings.json. Use when you want to change editor settings, preferences, configuration, themes, font size, tab size, format on save, auto save, keybindings, or any settings.json values.",
+      "name": "update-cursor-settings",
+      "skills": [
+        "./"
+      ],
+      "source": "./update-cursor-settings",
+      "strict": false
+    },
+    {
       "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
       "name": "vercel-react-best-practices",
       "skills": [
         "./"
       ],
       "source": "./vercel-react-best-practices",
+      "strict": false
+    },
+    {
+      "description": "微信公众号内容全流程助手：热点抓取 → 选题 → 框架 → 内容增强 → 写作 → SEO → 视觉AI → 排版推送草稿箱。\n触发关键词：公众号、推文、微信文章、微信推文、草稿箱、微信排版、选题、热搜、\n热点抓取、封面图、配图、写公众号、写一篇、主题画廊、排版主题、容器语法。\n也覆盖：markdown 转微信格式、学习用户改稿风格、文章数据复盘、风格设置、\n主题预览/切换、:::dialogue/:::timeline/:::callout 容器语法。\n不应被通用的\"写文章\"、blog、邮件、PPT、抖音/短视频、网站 SEO 触发——\n需要有公众号/微信等明确上下文。\n",
+      "name": "wewrite",
+      "skills": [
+        "./"
+      ],
+      "source": "./wewrite",
+      "strict": false
+    },
+    {
+      "description": "微信公众号内容全流程助手：热点抓取 → 选题 → 框架 → 内容增强 → 写作 → SEO → 视觉AI → 排版推送草稿箱。\n触发关键词：公众号、推文、微信文章、微信推文、草稿箱、微信排版、选题、热搜、\n热点抓取、封面图、配图、写公众号、写一篇、主题画廊、排版主题、容器语法。\n也覆盖：markdown 转微信格式、学习用户改稿风格、文章数据复盘、风格设置、\n主题预览/切换、:::dialogue/:::timeline/:::callout 容器语法。\n不应被通用的\"写文章\"、blog、邮件、PPT、抖音/短视频、网站 SEO 触发——\n需要有公众号/微信等明确上下文。\n",
+      "name": "wewrite-main",
+      "skills": [
+        "./"
+      ],
+      "source": "./wewrite-main",
       "strict": false
     }
   ]
