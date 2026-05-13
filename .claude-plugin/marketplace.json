@@ -1,13 +1,67 @@
 {
   "metadata": {
     "description": "Skills backup synced by Skills Manager",
-    "version": "2026.05.07"
+    "version": "2026.05.13"
   },
   "name": "cchao-skills",
   "owner": {
     "name": "cchao123"
   },
   "plugins": [
+    {
+      "description": "Use for Azure AI: Search, Speech, OpenAI, Document Intelligence. Helps with search, vector/hybrid search, speech-to-text, text-to-speech, transcription, OCR. WHEN: AI Search, query search, vector search, hybrid search, semantic search, speech-to-text, text-to-speech, transcribe, OCR, convert text to speech.",
+      "name": "azure-ai",
+      "skills": [
+        "./"
+      ],
+      "source": "./azure-ai",
+      "strict": false
+    },
+    {
+      "description": "Configure Azure API Management as an AI Gateway for AI models, MCP tools, and agents. WHEN: semantic caching, token limit, content safety, load balancing, AI model governance, MCP rate limiting, jailbreak detection, add Azure OpenAI backend, add AI Foundry model, test AI gateway, LLM policies, configure AI backend, token metrics, AI cost control, convert API to MCP, import OpenAPI to gateway.",
+      "name": "azure-aigateway",
+      "skills": [
+        "./"
+      ],
+      "source": "./azure-aigateway",
+      "strict": false
+    },
+    {
+      "description": "Execute Azure deployments for ALREADY-PREPARED applications that have existing .azure/deployment-plan.md and infrastructure files. DO NOT use this skill when the user asks to CREATE a new application — use azure-prepare instead. This skill runs azd up, azd deploy, terraform apply, and az deployment commands with built-in error recovery. Requires .azure/deployment-plan.md from azure-prepare and validated status from azure-validate. WHEN: \"run azd up\", \"run azd deploy\", \"execute deployment\", \"push to production\", \"push to cloud\", \"go live\", \"ship it\", \"bicep deploy\", \"terraform apply\", \"publish to Azure\", \"launch on Azure\". DO NOT USE WHEN: \"create and deploy\", \"build and deploy\", \"create a new app\", \"set up infrastructure\", \"create and deploy to Azure using Terraform\" — use azure-prepare for these.",
+      "name": "azure-deploy",
+      "skills": [
+        "./"
+      ],
+      "source": "./azure-deploy",
+      "strict": false
+    },
+    {
+      "description": "Query and analyze data in Azure Data Explorer (Kusto/ADX) using KQL for log analytics, telemetry, and time series analysis. WHEN: KQL queries, Kusto database queries, Azure Data Explorer, ADX clusters, log analytics, time series data, IoT telemetry, anomaly detection.",
+      "name": "azure-kusto",
+      "skills": [
+        "./"
+      ],
+      "source": "./azure-kusto",
+      "strict": false
+    },
+    {
+      "description": "Prepare Azure apps for deployment (infra Bicep/Terraform, azure.yaml, Dockerfiles). Use for create/modernize or create+deploy; not cross-cloud migration (use azure-cloud-migrate). DO NOT USE FOR: copilot-sdk apps (use azure-hosted-copilot-sdk). WHEN: \"create app\", \"build web app\", \"create API\", \"create serverless HTTP API\", \"create frontend\", \"create back end\", \"build a service\", \"modernize application\", \"update application\", \"add authentication\", \"add caching\", \"host on Azure\", \"create and deploy\", \"deploy to Azure\", \"deploy to Azure using Terraform\", \"deploy to Azure App Service\", \"deploy to Azure App Service using Terraform\", \"deploy to Azure Container Apps\", \"deploy to Azure Container Apps using Terraform\", \"generate Terraform\", \"generate Bicep\", \"function app\", \"timer trigger\", \"service bus trigger\", \"event-driven function\", \"containerized Node.js app\", \"social media app\", \"static portfolio website\", \"todo list with frontend and API\", \"prepare my Azure application to use Key Vault\", \"managed identity\".",
+      "name": "azure-prepare",
+      "skills": [
+        "./"
+      ],
+      "source": "./azure-prepare",
+      "strict": false
+    },
+    {
+      "description": "Analyze Azure resource groups and generate detailed Mermaid architecture diagrams showing the relationships between individual resources. WHEN: create architecture diagram, visualize Azure resources, show resource relationships, generate Mermaid diagram, analyze resource group, diagram my resources, architecture visualization, resource topology, map Azure infrastructure.",
+      "name": "azure-resource-visualizer",
+      "skills": [
+        "./"
+      ],
+      "source": "./azure-resource-visualizer",
+      "strict": false
+    },
     {
       "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
       "name": "brainstorming",
@@ -90,6 +144,24 @@
       "strict": false
     },
     {
+      "description": "Deploy, evaluate, and manage Foundry agents end-to-end: Docker build, ACR push, hosted/prompt agent create, container start, batch eval, continuous eval, prompt optimizer workflows, agent.yaml, dataset curation from traces. USE FOR: deploy agent to Foundry, hosted agent, create agent, invoke agent, evaluate agent, run batch eval, continuous eval, continuous monitoring, continuous eval status, optimize prompt, improve prompt, prompt optimizer, optimize agent instructions, improve agent instructions, optimize system prompt, deploy model, Foundry project, RBAC, role assignment, permissions, quota, capacity, region, troubleshoot agent, deployment failure, create dataset from traces, dataset versioning, eval trending, create AI Services, Cognitive Services, create Foundry resource, provision resource, knowledge index, agent monitoring, customize deployment, onboard, availability. DO NOT USE FOR: Azure Functions, App Service, general Azure deploy (use azure-deploy), general Azure prep (use azure-prepare).",
+      "name": "microsoft-foundry",
+      "skills": [
+        "./"
+      ],
+      "source": "./microsoft-foundry",
+      "strict": false
+    },
+    {
+      "description": "Best practices for Remotion - Video creation in React",
+      "name": "remotion-best-practices",
+      "skills": [
+        "./"
+      ],
+      "source": "./remotion-best-practices",
+      "strict": false
+    },
+    {
       "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
       "name": "shadcn",
       "skills": [
@@ -117,6 +189,15 @@
       "strict": false
     },
     {
+      "description": "童锦程视角：以\"深情祖师爷\"、直播情感内容创作者的思维框架看待人际关系、社会动态与个人成长。\n素材来源：9个一手视频字幕（直播/约会vlog/搭讪解析），约20万字。\n核心模型：5个。决策启发式：9条。\n触发词：「童锦程」「深情祖师爷」「用童锦程的方式」「从童锦程视角」「景辰怎么看」\n局限：素材以情感/人际内容为主，商业/创业思维数据不足，慎用于纯商业决策场景。\n调研时间：2026年4月。",
+      "name": "tong-jincheng-perspective",
+      "skills": [
+        "./"
+      ],
+      "source": "./tong-jincheng-perspective",
+      "strict": false
+    },
+    {
       "description": "Modify Cursor/VSCode user settings in settings.json. Use when you want to change editor settings, preferences, configuration, themes, font size, tab size, format on save, auto save, keybindings, or any settings.json values.",
       "name": "update-cursor-settings",
       "skills": [
@@ -135,6 +216,15 @@
       "strict": false
     },
     {
+      "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+      "name": "web-design-guidelines",
+      "skills": [
+        "./"
+      ],
+      "source": "./web-design-guidelines",
+      "strict": false
+    },
+    {
       "description": "微信公众号内容全流程助手：热点抓取 → 选题 → 框架 → 内容增强 → 写作 → SEO → 视觉AI → 排版推送草稿箱。\n触发关键词：公众号、推文、微信文章、微信推文、草稿箱、微信排版、选题、热搜、\n热点抓取、封面图、配图、写公众号、写一篇、主题画廊、排版主题、容器语法。\n也覆盖：markdown 转微信格式、学习用户改稿风格、文章数据复盘、风格设置、\n主题预览/切换、:::dialogue/:::timeline/:::callout 容器语法。\n不应被通用的\"写文章\"、blog、邮件、PPT、抖音/短视频、网站 SEO 触发——\n需要有公众号/微信等明确上下文。\n",
       "name": "wewrite",
       "skills": [
@@ -150,6 +240,15 @@
         "./"
       ],
       "source": "./wewrite-main",
+      "strict": false
+    },
+    {
+      "description": "Using the Wonda CLI to generate images, videos, music, and audio from the terminal — plus LinkedIn, Reddit, and X/Twitter research and automation",
+      "name": "wonda-cli",
+      "skills": [
+        "./"
+      ],
+      "source": "./wonda-cli",
       "strict": false
     }
   ]
